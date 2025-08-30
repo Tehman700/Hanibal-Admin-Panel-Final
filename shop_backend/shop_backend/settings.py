@@ -45,6 +45,7 @@ REST_FRAMEWORK = {
 }
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://pokeboostvault.store",  # deployed website
 ]
 ROOT_URLCONF = 'shop_backend.urls'
 
