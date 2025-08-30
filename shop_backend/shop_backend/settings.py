@@ -12,6 +12,8 @@ DEBUG = False
 ALLOWED_HOSTS = [
     "pokeboostvault.store",
     "www.pokeboostvault.store",
+    "3.94.168.68",
+    "api.pokeboostvault.store",
 ]
 
 # Application definition
