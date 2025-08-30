@@ -9,7 +9,10 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['3.94.168.68']
+ALLOWED_HOSTS = [
+    "pokeboostvault.store",
+    "www.pokeboostvault.store",
+]
 
 # Application definition
 
@@ -46,6 +49,7 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://pokeboostvault.store",  # deployed website
+    "https://wwww.pokeboostvault.store",
 ]
 ROOT_URLCONF = 'shop_backend.urls'
 
