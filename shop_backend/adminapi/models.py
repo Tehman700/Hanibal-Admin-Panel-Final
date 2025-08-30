@@ -6,7 +6,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     original_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     image = models.ImageField(upload_to="product_images/", storage=S3Boto3Storage())
-    description = models.TextField()
+    description = models.TextField(blank=True)
     category = models.CharField(max_length=100)
     is_hot = models.BooleanField(default=False)
     is_new = models.BooleanField(default=False)
